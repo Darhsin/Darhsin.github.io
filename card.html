@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1000px; height: 1500px;
+    background: #0f1720;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 1000px; height: 1500px;
+    display: flex; flex-direction: column;
+    background: #0f1720;
+    position: relative;
+  }
+  .photo-wrap {
+    width: 1000px; height: 820px;
+    overflow: hidden;
+    position: relative;
+  }
+  .photo-wrap img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
+    display: block;
+  }
+  .photo-fade {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 220px;
+    background: linear-gradient(to bottom, rgba(15,23,32,0) 0%, #0f1720 100%);
+  }
+  .content {
+    flex: 1;
+    padding: 26px 64px 56px;
+    display: flex; flex-direction: column; justify-content: flex-start;
+  }
+  .name {
+    font-size: 52px; font-weight: 600; color: #f5f1e6; letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .role {
+    font-size: 26px; color: #d8b866; font-weight: 500; margin-bottom: 4px;
+  }
+  .org {
+    font-size: 24px; color: #9aa4b2; margin-bottom: 36px;
+  }
+  .divider {
+    width: 80px; height: 3px; background: #d8b866; margin-bottom: 36px;
+  }
+  .info-row {
+    display: flex; align-items: center; gap: 20px; margin-bottom: 24px;
+  }
+  .info-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(216,184,102,0.12);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .info-icon svg { width: 22px; height: 22px; }
+  .info-text {
+    font-size: 26px; color: #e7e2d6;
+  }
+  .info-label {
+    font-size: 15px; color: #6f7885; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="photo-wrap">
+    <img src="https://darhsin.github.io/3b078ee0-______20260712_184237.png" alt="Dar-Hsin Chen">
+    <div class="photo-fade"></div>
+  </div>
+  <div class="content">
+    <div class="name">陳達新 Dar-Hsin Chen, Ph.D.</div>
+    <div class="role">Professor of Finance</div>
+    <div class="org">Dept. of Business Administration, National Taipei University</div>
+    <div class="divider"></div>
+    <div class="info-row">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#d8b866" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M4 6l8 6 8-6M4 6v12h16V6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <div class="info-label">Email</div>
+        <div class="info-text">dhchen@mail.ntpu.edu.tw</div>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#d8b866" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <div class="info-label">Website</div>
+        <div class="info-text">darhsin.github.io</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
